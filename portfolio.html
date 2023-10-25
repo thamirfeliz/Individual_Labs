@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <head>
   <link rel="stylesheet" href="styles.css">
     <title>Personal Portoflio</title>
@@ -7,6 +9,25 @@
 <body>
     <h1><p style="color:powderblue;">Thamir Feliz</p></h1>
     <h3>New Jersey Institute of Technology<br>UCID: 31477255 | tf23<br>Major: Architecture, Minor: Business<br><br>
+      <div>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">About</button>
+     <div id="demo" class="collapse">
+       This is Thamir Feliz's Personal Portfolio
+     </div>
+   
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+             <li><a class="Youtube" href="https://www.youtube.com">Youtube</a></li>
+             <li><a class="New York Times" href="https://www.nytimes.com">New York Times</a></li>
+             <li><a class="Google" href="https://www.google.com">Google</a></li>
+        </ul>
+      </div>
+
+   </div>
     <h2><p style="background-color:powderblue;">Hello,</h2>My name is Thamir and I live in Union, NJ. I did a lot of moving around when I was little, from Weehawken, to Clifton, to Union City, and now Union. I love to cook and explore new flavors. Ive been cooking ever since I was a little girl with all the lovely women in my family. I should also mention that I am from the Dominican Republic so food is very important to us. Food, for us, is the key to anyones heart and it definetly keeps the family together. Aside from food, I am learning to love coding little by little. It is very interesting to me that we can make an entire site form scratch with just a couple of codes.</h3>
     <p><a href="https://design.njit.edu">NJIT HCAD Website</a></p>
     <p><img src="HAC_photo_by_Iwan_Baan_(2).jpg" width="500" height="400" alt="Zaha Hadid's Heydar Aliyev Center"></p>
@@ -18,29 +39,44 @@
         th, td {padding: 10px; text-align: center;}
         table{margin: 100px;}
             </style>
-        <table id="Experience">
-            <tr>
-              <th>Education</th>
-              <th>Experience</th>
-              <th>Skills</th>
-            </tr>
-            <tr>
-              <td>Union City High School</td>
-              <td>Marotta & Garvey</td>
-              <td>Adobe Cloud</td>
-            </tr>
-            <tr>
-              <td>Hudson County Community College</td>
-              <td>Home Depot</td>
-              <td>Rhino 7</td>
-            </tr>
-            <tr>
-              <td>New Jersey Institue of Technology</td>
-              <td>Waga Enterprises-Architects</td>
-              <td>Photoshop</td>
-            </tr>
-          </table>
-    </div>
+
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="Experience">
+  <h2>Experience</h2>           
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Education</th>
+        <th>Experience</th>
+        <th>Skills</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Union City High School</td>
+        <td>Marotta & Garvey</td>
+        <td>Adobe Creative Cloud</td>
+      </tr>
+      <tr>
+        <td>Hudson County Community College</td>
+        <td>Home Depot</td>
+        <td>Rhino 7</td>
+      </tr>
+      <tr>
+        <td>New Jersey Institute of Technology</td>
+        <td>Waga Enterprises-Architects</td>
+        <td>Photoshop</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
     <div>
         <form><br>
             <label for="fname">Username:</label><br>
@@ -113,3 +149,5 @@
 <p><a class="NYT" href="https://www.nytimes.com">New York Times</a></p>
 <p><a class="Google" href="https://www.google.com">Google</a></p>
     </body>
+    
+
