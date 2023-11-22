@@ -173,5 +173,19 @@
   }
 }
 calculateGrade(score);
- </script>   
+ </script>    
+ <button id="changeTextBtn">Click me!</button>
+ <p id="displayText">Initial Text</p>
+ 
+ <script>
+     const changeTextBtn = document.getElementById("changeTextBtn");
+     const displayText = document.getElementById("displayText");
 
+     changeTextBtn.addEventListener("click", function () {
+         changeText();
+         });
+ 
+      function changeText() {
+         displayText.textContent = "Hello, JavaScript World!";
+         }
+ </script>
