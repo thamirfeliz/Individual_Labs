@@ -189,3 +189,28 @@ calculateGrade(score);
          displayText.textContent = "Hello, JavaScript World!";
          }
  </script>
+ <form id="myForm">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+  const myForm = document.getElementById("myForm");
+  myForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const usernameValue = document.getElementById("username").value;
+      const passwordValue = document.getElementById("password").value;
+      if (usernameValue === '' || passwordValue === '') {
+          alert("Username and password cannot be empty!");
+      } else {
+          setTimeout(function () {
+              alert("Submission successful after 3 seconds!");
+          }, 3000);
+      }
+  });
+</script>
